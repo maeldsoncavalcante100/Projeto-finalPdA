@@ -42,3 +42,11 @@ CREATE TABLE Stock (
   foreign Key (volunteer_id) references Volunteer(id)
 );
 
+
+-- SOMA DE TODAS AS DOAÇÕES
+SELECT SUM(amount) FROM Donation;
+-- SOMA DE TODAS AS DOAÇÕES POR CATEGORIA
+SELECT category, SUM(amount) FROM Donation GROUP BY category;
+-- SOMA DE TODOS OS ITENS
+SELECT  item, SUM(amount) FROM Donation GROUP BY item;
+
