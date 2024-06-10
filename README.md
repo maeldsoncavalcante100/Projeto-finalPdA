@@ -89,7 +89,6 @@ Aqui estão as consultas SQL essenciais para gerenciar e obter informações do 
 # Backup do Banco de Dados
 Para fazer um backup do banco de dados `Donations`, use o seguinte comando no terminal:
 `mysqldump -u [usuário] -p[senha] Donations > backup_doacoes.sql`
-![116441023]()
 
 - Substitua [usuário] pelo seu nome de usuário MySQL.
 - Substitua [senha] pela sua senha MySQL.
