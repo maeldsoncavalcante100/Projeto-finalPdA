@@ -23,5 +23,14 @@ VALUES
 ('', '', '28101737537', '21988371578'),
 ('Liz Cecília Clara', '', '71853732559', '28998011532');
 
+INSERT INTO Volunteer (name, cpf, role) VALUES 
+(),
+(),
+(),
+(),
+();
 
+select * from Donation_list;
+select * from Volunteer;
+select * from Donation;
 select * from Donor;

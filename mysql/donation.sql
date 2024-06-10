@@ -24,7 +24,7 @@ CREATE TABLE Donation_list (
   id int primary key not null auto_increment,
   donation_id int not null,
   entry_date datetime,
-  foreign Key (donation_id) references Donation(id)
+  foreign key (donation_id) references Donation(id)
 );
 
 CREATE TABLE Volunteer (
