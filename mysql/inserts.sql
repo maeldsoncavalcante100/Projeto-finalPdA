@@ -20,7 +20,7 @@ VALUES
 SELECT * FROM Volunteer;
 
 
-INSERT INTO Donation (item, category, amount, donor_id, entry_date)
+INSERT INTO  Donation (id, item, category, amount, donor_id, entry_date)
 VALUES
 ('Arroz', 'Alimentos', '100', '1', '2024-05-01 10:00:00'),
 ('Casacos', 'Roupas', '50', '2', '2024-05-02 11:23:27'),
@@ -43,18 +43,8 @@ VALUES
 ('Creme Dental', 'Higiene Pessoal', '150', '19', '2024-05-17 20:45:50'),
 ('Desodorante', 'Higiene Pessoal', '100', '20', '2024-05-18 21:00:15'),
 ('Band-aid', 'Medicamentos', '90', '21', '2024-05-19 21:15:43'),
-('Pomada Antisséptica', 'Medicamentos', '110', '22', '2024-05-20 21:30:37'),
-('Mochilas', 'Material Escolar', '200', '11', '2024-05-21 21:45:24'),
-('Borracha', 'Material Escolar', '180', '12', '2024-05-22 22:00:29'),
-('Tesouras', 'Material Escolar', '160', '13', '2024-05-23 22:15:47'),
-('Armários', 'Móveis', '30', '14', '2024-05-24 22:30:12'),
-('Prateleiras', 'Móveis', '50', '15', '2024-05-25 22:45:53'),
-('Sofas', 'Móveis', '359', '16', '2024-05-26 23:00:38'),
-('Açucar', 'Alimentos', '87', '17', '2024-05-27 23:15:41'),
-('Água Sanitária', 'Produtos de Limpeza', '60', '18', '2024-05-28 23:30:26'),
-('Esponjas de Limpeza', 'Produtos de Limpeza', '70', '19', '2024-05-29 23:45:13'),
-('Utensílios de Cozinha', 'Outros', '150', '20', '2024-05-30 23:50:27');
+('Pomada Antisséptica', 'Medicamentos', '110', '22', '2024-05-20 21:30:37');
+
 
 
 SELECT * FROM Donation;
-
