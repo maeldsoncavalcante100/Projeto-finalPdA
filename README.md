@@ -98,6 +98,6 @@ O sistema de doações é licenciado sob a licença MIT.
 
 ## Participantes do Projeto
 
-| <img src="https://github.com/maeldsoncavalcante100/Projeto-finalPdA/assets/110051309/13c81d7a-0afe-40a6-9ed8-424ad32b1ee1" width="100px"> | <img src="images/reury.jpg" width="100px"> | <img src="images/lucy.jpg" width="100px"> | <img src="https://github.com/maeldsoncavalcante100/Projeto-finalPdA/assets/110051309/31a3047d-0b55-4094-9533-27d893fef27e" width="100px"> | <img src="images/alessandro.jpg" width="100px"> |
+| <img src="https://github.com/maeldsoncavalcante100/Projeto-finalPdA/assets/110051309/13c81d7a-0afe-40a6-9ed8-424ad32b1ee1" width="80px"> | <img src="images/reury.jpg" width="80px"> | <img src="images/lucy.jpg" width="80px"> | <img src="https://github.com/maeldsoncavalcante100/Projeto-finalPdA/assets/110051309/31a3047d-0b55-4094-9533-27d893fef27e" width="80px"> | <img src="images/alessandro.jpg" width="80px"> |
 |-------------------------------------------|----------------------------------------------|-------------------------------------------|-----------------------------------------------|-------------------------------------------------|
 | Maeldson Cavalcante                             | Reury Cardoso                          | Lucy                                      | Jamyle Elen                                    | Alessandro Filho                               |
