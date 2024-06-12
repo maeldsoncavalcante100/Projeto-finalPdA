@@ -1,0 +1,2 @@
+-- SOMA DE TODAS AS DOAÇÕES
+SELECT SUM(amount) FROM Donation;
