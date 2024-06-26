@@ -67,8 +67,9 @@ VALUES
 ('Band-aid', 'Medicamentos', '90', '21', '2024-05-19 21:15:43'),
 ('Pomada Antisséptica', 'Medicamentos', '110', '22', '2024-05-20 21:30:37');
 
-
+INSERT INTO Stock
 select * from Donation_list;
 select * from Volunteer;
 select * from Donation;
 select * from Donor;
+SELECT * FROM Stock;
