@@ -101,7 +101,7 @@ VALUES
 (21, 21, 'RJ', 90, 'Recebido'),
 (22, 22, 'ES', 110, 'Recebido');
 
-select * from Stock
+
 select * from Volunteer;
 select * from Donation;
 select * from Donor;
