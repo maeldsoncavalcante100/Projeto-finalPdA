@@ -26,7 +26,7 @@ VALUES
 INSERT INTO Volunteer (name, cpf, role)
 VALUES 
 ('Christopher Burgos Neto', '75093187003', 'Diretor'),
-('David Chaves Esteves', '92855769078', 'coordenador'),
+('David Chaves Esteves', '92855769078', 'Coordenador'),
 ('Adriano Azevedo', '49036345073', 'Voluntário'),
 ('Mel Branco', '28588833000', 'Gerente'),
 ('Catarina Grego de Leal', '67644784063', 'Assistente'),
@@ -37,10 +37,17 @@ VALUES
 ('Abgail Marlene Galvão de Neves', '15177958000', 'Facilitador'),
 ('Caio Edson Correia Filho', '30144458004', 'Instrutor'),
 ('Dara Lúcia Abreu Lutero', '53103386087', 'Voluntário'),
-('Allison Léia Barros Correia da Encarnação', '40438306023', 'voluntário'),
+('Allison Léia Barros Correia da Encarnação', '40438306023', 'Voluntário'),
 ('Amélia Estrada Queirós', '08810034090', 'Voluntário'),
 ('Nayara Bittencourt de Jimenes', '83151067085', 'Assistente Social'),
-('Jeniffer Mirela Ávila Branco', '31187570001', 'Psicóloga');
+('Jeniffer Mirela Ávila Branco', '31187570001', 'Psicóloga'),
+('João Pedro Gomes', '12345678901', 'Voluntário'),
+('Maria Fernanda Oliveira', '23456789012', 'Coordenadora'),
+('Luiz Henrique Silva', '34567890123', 'Gerente'),
+('Ana Clara Sousa', '45678901234', 'Recepcionista'),
+('Pedro Lucas Almeida', '56789012345', 'Facilitador'),
+('Mariana Santos Ribeiro', '67890123456', 'Instrutora');
+
 
 INSERT INTO Donation (item, category, amount, donor_id, entry_date)
 VALUES
@@ -67,62 +74,34 @@ VALUES
 ('Band-aid', 'Medicamentos', '90', '21', '2024-05-19 21:15:43'),
 ('Pomada Antisséptica', 'Medicamentos', '110', '22', '2024-05-20 21:30:37');
 
-<<<<<<< HEAD
-INSERT INTO Stock
-=======
-INSERT INTO donation_list (id, donation_id, entry_date)
+
+
+INSERT INTO Stock (donation_id, volunteer_id, location, capacity, operation)
 VALUES 
-('1', '1','2024-05-01 10:00:00'),
-('2',  '2', '2024-05-02 11:23:27'),
-('3',  '3', '2024-05-03 12:34:45'),
-('4', '4', '2024-05-04 13:45:32'),
-('5', '5', '2024-05-05 14:56:56'),
-('6', '6', '2024-05-06 15:07:21'),
-('7', '7', '2024-05-06 15:07:21'),
-('8', '8', '2024-05-07 16:18:39'),
-('9', '9', '2024-05-08 17:29:08'),
-('10', '10', '2024-05-09 18:40:50'),
-('11', '11', '2024-05-09 18:45:13'),
-('12', '12', '2024-05-10 19:00:27'),
-('13', '13', '2024-05-11 19:15:45'),
-('14', '14', '2024-05-12 19:30:32'),
-('15', '15', '2024-05-13 19:45:56'),
-('16', '16', '2024-05-14 20:00:21'),
-('17', '17', '2024-05-15 20:15:39'),
-('18', '18', '2024-05-16 20:30:08'),
-('19', '19', '2024-05-17 20:45:50'),
-('20', '20', '2024-05-18 21:00:15'),
-('21', '21', '2024-05-19 21:15:43'),
-('22', '22', '2024-05-20 21:30:37');
-
-
-INSERT INTO Stock (donation_id, volunteer_id) VALUES
-(1, 3),
-(2, 12),
-(3, 13),
-(4, 14),
-(5, 3),
-(6, 12),
-(7, 13),
-(8, 14),
-(9, 3),
-(10, 12),
-(11, 13),
-(12, 14),
-(13, 3),
-(14, 12),
-(15, 13),
-(16, 14),
-(17, 3),
-(18, 12),
-(19, 13),
-(20, 14),
-(21, 3),
-(22, 12);
+(1, 1, 'DF', 100, 'Recebido'),
+(2, 2, 'MA', 50, 'Recebido'),
+(3, 3, 'DF', 150, 'Recebido'),
+(4, 4, 'CE', 250, 'Recebido'),
+(5, 5, 'TO', 200, 'Recebido'),
+(6, 6, 'MA', 70, 'Recebido'),
+(7, 7, 'MA', 554, 'Recebido'),
+(8, 8, 'PB', 499, 'Recebido'),
+(9, 9, 'RN', 70, 'Recebido'),
+(10, 10, 'BA', 2500, 'Recebido'),
+(11, 11, 'TO', 120, 'Recebido'),
+(12, 12, 'SE', 80, 'Recebido'),
+(13, 13, 'RR', 60, 'Recebido'),
+(14, 14, 'MG', 40, 'Recebido'),
+(15, 15, 'TO', 30, 'Recebido'),
+(16, 16, 'RN', 20, 'Recebido'),
+(17, 17, 'PI', 50, 'Recebido'),
+(18, 18, 'PR', 70, 'Recebido'),
+(19, 19, 'SP', 150, 'Recebido'),
+(20, 20, 'CE', 100, 'Recebido'),
+(21, 21, 'RJ', 90, 'Recebido'),
+(22, 22, 'ES', 110, 'Recebido');
 
 select * from Stock
->>>>>>> 25353a20fb18bf1c4d23d3783b41e7b9fd70ec86
-select * from Donation_list;
 select * from Volunteer;
 select * from Donation;
 select * from Donor;

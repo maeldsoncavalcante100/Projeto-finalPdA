@@ -4,10 +4,10 @@ USE Donations;
 
 CREATE TABLE Donor (
   id int primary key not null auto_increment,
-  name varchar(50),
-  email varchar(150),
-  cpf char(11),
-  cellphone char(11)
+  name varchar(50) not null,
+  email varchar(150) not null,
+  cpf char(11) not null,
+  cellphone char(11) not null
 );
 
 CREATE TABLE Donation (
@@ -16,28 +16,25 @@ CREATE TABLE Donation (
   category varchar(25) not null,
   amount int not null,
   donor_id int not null,
-  entry_date datetime,
+  entry_date datetime not null,
   foreign Key (donor_id) references Donor(id)
 );  
 
-CREATE TABLE Donation_list (
-  id int primary key not null auto_increment,
-  donation_id int not null,
-  entry_date datetime,
-  foreign key (donation_id) references Donation(id)
-);
 
 CREATE TABLE Volunteer (
   id int primary key auto_increment not null,
-  name varchar(50),
-  cpf char(11),
-  role varchar(25)
+  name varchar(255) not null,
+  cpf char(11) not null,
+  role varchar(25) not null
 );
 
 CREATE TABLE Stock (
   id int primary key not null auto_increment,
   donation_id int not null,
   volunteer_id int not null,
+  location varchar(255) not null,
+  capacity int not null,
+  operation varchar(255) not null,
   foreign key (donation_id) references Donation(id),
   foreign Key (volunteer_id) references Volunteer(id)
 );
@@ -48,8 +45,6 @@ SELECT SUM(amount) FROM Donation;
 SELECT category, SUM(amount) FROM Donation GROUP BY category;
 -- SOMA DE TODOS OS ITENS
 SELECT  item, SUM(amount) FROM Donation GROUP BY item;
-<<<<<<< HEAD
-=======
 
 -- Esta consulta lista os nomes dos voluntários e o número de doações que cada um gerenciou.
 SELECT V.name, COUNT(S.donation_id) AS managed_donations
@@ -69,4 +64,3 @@ SELECT category, COUNT(*) AS donation_count
 FROM Donation
 GROUP BY category
 ORDER BY donation_count DESC;
->>>>>>> 25353a20fb18bf1c4d23d3783b41e7b9fd70ec86
